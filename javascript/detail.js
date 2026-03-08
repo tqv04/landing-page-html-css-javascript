@@ -85,63 +85,68 @@ const products = [
   },
 ];
 
-const container = document.getElementById("products");
+const params = new URLSearchParams(window.location.search);
 
-function renderProducts(list) {
-  container.innerHTML = "";
+const id = params.get("id");
 
-  list.forEach((product) => {
-    container.innerHTML += `
+console.log(id);
+
+const product = products.find((p) => p.id == id);
+document.getElementById("product-detail").innerHTML = `
+   <div class="breadcrumb">
+      <a href="home.html"><i class="fa-solid fa-home"></i></a>
+      <span class="arrow">›</span>
+      <span><a href="shop.html">Products</a></span>
+      <span>›</span>
+      <span><a href="shop.html?id=${product.tag}"> ${product.tag}</a></span>
+    </div>
+<div class="product-detail">
+
+  <div class="product-left">
+    <img src="${product.img}" alt="${product.name}">
+  </div>
+
+  <div class="product-right">
     
-    
-    <div class="product-card" onclick="goDetail(${product.id})">
-      <div class="product-img">
+    <h1 class="product-title">${product.name}</h1>
 
-         <img src="${product.img}" alt="${product.name}">
-
-        <div class="card-icons">
-
-          <div class="card-icon">
-            <span class="tooltip">Add to wishlist</span>
-            <i class="fa-regular fa-heart"></i>
-          </div>
-
-          <div class="card-icon">
-            <span class="tooltip">Add to compare</span>
-            <i class="fa-solid fa-shuffle"></i>
-          </div>
-
-          <div class="card-icon">
-            <span class="tooltip">Quick view</span>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-
-        </div>
-
+    <div class="rating">
+      <span class="score">4.5</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
       </div>
-
-      <div class="product-info">
-        <h3>${product.name}</h3>
-        <span class="tag">${product.tag}</span>
-
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-
-        <div class="price">$${product.price}</div>
-      </div>
-            
+      <span class="count">(4 Rating)</span>
     </div>
 
-    `;
-  });
-}
-renderProducts(products);
+    <div class="price">$${product.price}</div>
 
-function goDetail(id) {
-  window.location.href = `product-detail.html?id=${id}`;
-}
+    <p class="desc">
+      Pellentesque habitant morbi tristique senectus et netus.
+    </p>
+
+    <div class="actions">
+
+      <div class="quantity">
+        <button>-</button>
+        <input value="1">
+        <button>+</button>
+      </div>
+
+      <button class="add-cart">
+        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+      </button>
+
+      <button class="icon-btn">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+`;
