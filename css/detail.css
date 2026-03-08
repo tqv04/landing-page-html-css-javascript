@@ -497,7 +497,7 @@ cursor:pointer;
 }
 
 .contact{
-  background-image: url(/landing-page-html-css-javascript/public/bg-1.jpg);
+  background-image: url(../images/bg-1.jpg);
   padding: 60px 70px;
   border-radius: 30px;
   display:flex;

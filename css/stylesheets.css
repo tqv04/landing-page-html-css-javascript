@@ -292,7 +292,7 @@ color:#1e90ff;
 }
 
 .banner{
-background-image: url(/landing-page-html-css-javascript/public/bg-1.jpg);
+background-image: url(../images/bg-1.jpg);
 width: 100%;
 height: 600px;
 border-radius: 50px;
@@ -473,14 +473,14 @@ transform:translateY(-10px);
 
 
 .ipad{
-  background-image: url(/landing-page-html-css-javascript/public/bg2-1.jpg);
+  background-image: url(../images/bg2-1.jpg);
   color:white;
   background-size: cover;
 }
 
 
 .watch{
-  background-image: url(/landing-page-html-css-javascript/public/bg3-1.jpg);
+  background-image: url(../images/bg3-1.jpg);
   color:white;
   background-size: cover;
 }
@@ -892,7 +892,7 @@ border: none;
   background:#1e90ff;
 }
 .contact{
-  background-image: url(/landing-page-html-css-javascript/public/bg-1.jpg);
+  background-image: url(../images/bg-1.jpg);
   padding: 60px 70px;
   border-radius: 30px;
   display:flex;
