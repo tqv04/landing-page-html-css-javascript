@@ -4,84 +4,84 @@ const products = [
     name: "Chrome Watch",
     tag: "Exclusive",
     price: 399,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/gold-watch-1-300x300.png",
+    img: "public/gold-watch-1-300x300.png",
   },
   {
     id: 2,
     name: "PlayStaion 5",
     tag: "Exclusive",
     price: 899,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr1-2-1-300x300.jpg",
+    img: "public/pr1-2-1-300x300.jpg",
   },
   {
     id: 3,
     name: "Tablet X5",
     tag: "Tablets",
     price: 699,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr2-1-300x300.jpg",
+    img: "public/pr2-1-300x300.jpg",
   },
   {
     id: 4,
     name: "PlayStation Headset",
     tag: "Gaming",
     price: 599,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr3-1-300x300.jpg",
+    img: "public/pr3-1-300x300.jpg",
   },
   {
     id: 5,
     name: "iPhone 14 Pro",
     tag: "Smart Phones",
     price: 1.599,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr4-1-300x300.jpg",
+    img: "public/pr4-1-300x300.jpg",
   },
   {
     id: 6,
     name: "VR Gaming",
     tag: "Gaming",
     price: 790,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr2-1-300x300.jpg",
+    img: "public/pr2-1-300x300.jpg",
   },
   {
     id: 7,
     name: "Wireless Controller 5",
     tag: "Gaming",
     price: 399,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr6-1-300x300.jpg",
+    img: "public/pr6-1-300x300.jpg",
   },
   {
     id: 8,
     name: "Xbox One",
     tag: "Gaming",
     price: 499,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr7-1-300x300.jpg",
+    img: "public/pr7-1-300x300.jpg",
   },
   {
     id: 9,
     name: "Black Sports Watch",
     tag: "Smart Watches",
     price: 399,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr8-1-300x300.jpg",
+    img: "public/pr8-1-300x300.jpg",
   },
   {
     id: 10,
     name: "Android Phone",
     tag: "Premium Sets",
     price: 599,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr9-1-300x300.jpg",
+    img: "public/pr9-1-300x300.jpg",
   },
   {
     id: 11,
     name: "Silver Laptop",
     tag: "Laptops",
     price: 2.799,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr10-1-300x300.jpg",
+    img: "public/pr10-1-300x300.jpg",
   },
   {
     id: 12,
     name: "Silver Laptop",
     tag: "Laptops",
     price: 2.399,
-    img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr11-1-300x300.jpg",
+    img: "public/pr11-1-300x300.jpg",
   },
 ];
 
@@ -94,7 +94,7 @@ console.log(id);
 const product = products.find((p) => p.id == id);
 document.getElementById("product-detail").innerHTML = `
    <div class="breadcrumb">
-      <a href="home.html"><i class="fa-solid fa-home"></i></a>
+      <a href="index.html"><i class="fa-solid fa-home"></i></a>
       <span class="arrow">›</span>
       <span><a href="shop.html">Products</a></span>
       <span>›</span>
