@@ -72,54 +72,60 @@ const products = [
     img: "/Landing-page-HTML-CSS-JAVACSRIPT-/public/pr11-1-300x300.jpg",
   },
 ];
+
 const container = document.getElementById("products");
 
-products.forEach((product) => {
-  container.innerHTML += `
-  
-  <div class="product-card">
+function renderProducts(list) {
+  container.innerHTML = "";
 
-    <div class="product-img">
+  list.forEach((product) => {
+    container.innerHTML += `
+    
+    <div class="product-card">
 
-      <img src="${product.img}" alt="watch">
+      <div class="product-img">
 
-      <div class="card-icons">
+        <img src="${product.img}" alt="${product.name}">
 
-        <div class="card-icon">
-          <span class="tooltip">Add to wishlist</span>
-          <i class="fa-regular fa-heart"></i>
-        </div>
+        <div class="card-icons">
 
-        <div class="card-icon">
-          <span class="tooltip">Add to compare</span>
-          <i class="fa-solid fa-shuffle"></i>
-        </div>
+          <div class="card-icon">
+            <span class="tooltip">Add to wishlist</span>
+            <i class="fa-regular fa-heart"></i>
+          </div>
 
-        <div class="card-icon">
-          <span class="tooltip">Quick view</span>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="card-icon">
+            <span class="tooltip">Add to compare</span>
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+
+          <div class="card-icon">
+            <span class="tooltip">Quick view</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
         </div>
 
       </div>
 
-    </div>
+      <div class="product-info">
+        <h3>${product.name}</h3>
+        <span class="tag">${product.tag}</span>
 
-    <div class="product-info">
-      <h3>${product.name}</h3>
-      <span class="tag">${product.tag}</span>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
 
-      <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
+        <div class="price">$${product.price}</div>
       </div>
-
-      <div class="price">$${product.price}</div>
-    </div>
             
-  </div>
+    </div>
 
-  `;
-});
+    `;
+  });
+}
+renderProducts(products);
