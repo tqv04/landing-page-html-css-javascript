@@ -639,6 +639,9 @@ footer{
   color:#6b7c93;
 }
 
+.payments{
+  display: flex;
+}
 .payments img{
   height:25px;
   margin-left:15px;
