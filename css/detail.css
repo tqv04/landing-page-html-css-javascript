@@ -72,7 +72,10 @@ visibility:hidden;
 
 transition:0.3s;
 }
-
+.icon a{
+  text-decoration: none;
+  color: inherit;
+}
 .mega-menu-pages{
 
 position:absolute;

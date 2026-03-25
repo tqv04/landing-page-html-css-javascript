@@ -136,7 +136,7 @@ document.getElementById("product-detail").innerHTML = `
         <button>+</button>
       </div>
 
-      <button class="add-cart">
+      <button class="add-cart" onclick='addToCart(${JSON.stringify(product)})'>
         <i class="fa-solid fa-cart-shopping"></i> Add to cart
       </button>
 

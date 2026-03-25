@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Detail</title>
-  <link rel="stylesheet" href="css/detail.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesheets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
-
 <body>
-  <div class="container-full">
-    <header class="navbar">
+    <div class="container-full">
+     <header class="navbar">
       <div class="container">
-
         <div class="logo">
           <a href="index.html"><img src="images/06-37logo.webp" alt="logo"></a>
         </div>
 
         <nav class="menu">
-          <a class="menu-a" href="index.html">Home</a>
+          <a class="active menu-a" href="index.html">Home</a>
           <div class="menu-item shop-item">
-            <a href="shop.html" class="active menu-a">Shop</a>
+            <a href="shop.html" class="menu-a">Shop</a>
           </div>
           <div class="menu-item category-item">
             <a href="#" class="menu-a">Categories</a>
@@ -154,17 +152,15 @@
             <input type="text" placeholder="Search ...">
           </div>
 
-         <div class="icons">
+          <div class="icons">
             <div class="icon"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i> <span>0</span></a></div>
             <div class="icon"><a href="wishlist.html"><i class="fa-regular fa-heart"></i> <span>0</span></a></div>
           </div>
         </div>
       </div>
     </header>
-
-
-    <div id="product-detail"></div>
-    <section class="contact">
+    <div id="cart-list"></div>
+      <section class="contact">
       <div class="contact-left-site">
         <h3>Our <span>Newsletter</span></h3>
         <p>Get updates by subscribe our weekly newsletter</p>
@@ -179,7 +175,7 @@
         </form>
       </div>
     </section>
-    <footer>
+      <footer>
 
       <div class="footer-container">
 
@@ -188,10 +184,10 @@
           <h2 class="footer-logo">V<span>Venture.</span></h2>
 
           <p>Our Address:</p>
-          <h4>No. 869 General Trade Center,<br>California, USA</h4>
+          <h4>Nha Be<br>HO CHI MINH</h4>
 
           <p>24/7 Free Call:</p>
-          <h4>+1 (800) 333 456</h4>
+          <h4>0931892826</h4>
 
           <div class="social">
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -245,10 +241,9 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
 
-        <p>Gadgets Shop © 2026 All Rights Reserved.</p>
+        <p>VVenture © 2026</p>
 
         <div class="payments">
           <img src="images/visa-logo-png_seeklogo-198364.webp" alt="">
@@ -261,9 +256,8 @@
 
       </div>
     </footer>
-  </div>
-  <script src="javascript/redux.js"></script>
-  <script src="javascript/detail.js"></script>
+    </div>
+    <script src="javascript/redux.js"></script>
+    <script src="javascript/card.js"></script>
 </body>
-
 </html>
